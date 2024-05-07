@@ -1,0 +1,28 @@
+html
+  head
+    title=title
+  body
+    h1 My Form 
+    form(action="http://localhost:3000/api/employees/update", method='post')
+      label(for='firstName') Firstname:
+      input#firstName(type='text', name='firstName' required) 
+      br
+      label(for='middleName') Middlename:
+      input#middleName(type='text', name='middleName' required)
+      br
+      label(for='lastName') Lastname:
+      input#lastName(type='text', name='lastName' required)
+      br
+      label(for='gender') Gender:
+      input#gender(type='text', name='gender' required)
+      br
+      label(for='number') Number:
+      input#number(type='text', name='number' required)
+      br
+      label(for='address') Address:
+      input#address(type='text', name='address' required)
+      br
+      label(for='jobTitle') Job Title:
+      input#jobTitle(type='text', name='jobTitle' required)
+      br
+      button(type='submit') Submit
